@@ -258,7 +258,9 @@ function animate(){
     const sec = performance.now()/1000
 
     theta = 4
-    //camera.position.x = sec*THREE.MathUtils.radToDeg()
+    camera.position.x = radius * Math.sin( THREE.MathUtils.degToRad( sec * 10 * theta ) );
+    camera.position.y = radius * Math.sin( THREE.MathUtils.degToRad( sec * 5 * theta ) );
+    camera.position.z = radius * Math.cos( THREE.MathUtils.degToRad( sec * 3 * theta ) );
     controls.update()
     // Render
     renderer.render(scene, camera)
