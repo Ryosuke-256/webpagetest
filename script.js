@@ -1,10 +1,6 @@
-import * as THREE from 'three'
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
-import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js'
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-import { sin } from 'three/examples/jsm/nodes/Nodes.js'
+import * as THREE from 'https://threejs.org/build/three.module.js';
+import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
+import { GUI } from 'https://cdn.jsdelivr.net/npm/dat.gui/build/dat.gui.module.js';
 
 /**
  * 宣言
